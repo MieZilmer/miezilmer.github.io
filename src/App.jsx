@@ -5,11 +5,10 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Navigation from "./components/Navigation";
 
-
 export default function App() {
   return (
     <>
-      <BrowserRouter basename={import.meta.env.DEV ? "/" : "miezilmer"}>
+      <BrowserRouter>
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -21,4 +20,3 @@ export default function App() {
     </>
   );
 }
-
