@@ -1,14 +1,12 @@
-import { NavLink } from "react-router";
-
-export default function BannerImage() {
+function Navigation() {
   return (
-  <nav>
-    <NavLink to="/" end>
-      Home
-    </NavLink>
-    <NavLink to="/projects">Projects</NavLink>
-    <NavLink to="/about">About</NavLink>
-    <NavLink to="/contact">Contact</NavLink>
-  </nav>
+    <nav id="navigation">
+      <a href="#home">// Home</a>
+      <a href="#projects">// Projects</a>
+      <a href="#about">// About</a>
+      <a href="#contact">// Contact</a>
+    </nav>
   );
 }
+
+export default Navigation;

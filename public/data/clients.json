@@ -1,0 +1,62 @@
+[
+  {
+    "id": "0",
+    "name": "Eksamens projekt",
+    "subtitle": "2 semester",
+    "body": "This was the 2nd semesters exam project on the multimedia education.",
+    "links": [
+      {
+        "url": "https://steno.makiro.dk/index.html",
+        "text": "Se projektet"
+      }
+    ],
+    "image": "/data/img/psykiske-lidelser.png"
+  },
+  {
+    "id": "1",
+    "name": "Zilmers",
+    "subtitle": "WEBSITE",
+    "body": "This is a website i created in Wix studio back in 2020",
+    "links": [{ "url": "https://www.zilmers.com/", "text": "Go to website" }],
+    "image": "/data/img/zilmers.png"
+  },
+  {
+    "id": "2",
+    "name": "Northern Decoration",
+    "subtitle": "Website",
+    "body": "I am the co creater of some of the designs for Northern Decoration and have digitalized all of the designs using Adobe Illustrator.",
+    "links": [{ "url": "https://koustrupco.dk/en/northern-decoration-1121/", "text": "Go to website" }],
+    "image": "/data/img/nd.jpg"
+  },
+  {
+    "id": "3",
+    "name": "",
+    "subtitle": "",
+    "body": "",
+    "links": [
+      {
+        "url": "",
+        "text": ""
+      }
+    ],
+    "image": ""
+  },
+
+  {
+    "id": "",
+    "name": "",
+    "subtitle": "",
+    "body": "",
+    "links": [{ "url": "", "text": "" }],
+    "image": ""
+  },
+
+  {
+    "id": "5",
+    "name": "",
+    "subtitle": "Website",
+    "body": "",
+    "links": [{ "url": "", "text": "Go To Website" }],
+    "image": ""
+  }
+]

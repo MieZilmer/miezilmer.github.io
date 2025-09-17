@@ -1,9 +1,9 @@
 function About() {
   return (
-    <div>
-      <h1>About Me</h1>
+    <section id="about">
+      <h2>About Me</h2>
       <p>Learn more about me...</p>
-    </div>
+    </section>
   );
 }
 
