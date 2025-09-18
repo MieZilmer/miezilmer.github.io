@@ -1,7 +1,26 @@
 [
   {
     "id": "0",
-    "name": "Eksamens projekt",
+    "name": "Interactive storytelling",
+    "subtitle": "A project i had in the 2 semester",
+    "body": "This was a project we developed for the Steno Museum, where we were tasked with selecting an exhibition and designing an interactive storytelling experience for a specific age group. My group chose the exhibition on the solar system and targeted children aged 5–10. Our goal was to communicate the complex facts about the solar system in a fun and engaging way that would not only capture the children’s interest but also ensure they could remember the key information afterwards.",
+    "links": [
+      {
+        "url": "https://storytelling.mdamsgaard.dk",
+        "text": "Se projektet"
+      }
+    ],
+    "image": "/data/img/storytelling1.png",
+    "additionalImages": [
+      "/data/img/storytelling2.png",
+      "/data/img/storytelling3.png",
+      "/data/img/storytelling4.png",
+      "/data/img/storytelling5.png"
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Exam project",
     "subtitle": "2 semester",
     "body": "This was the 2nd semesters exam project on the multimedia education.",
     "links": [
@@ -10,53 +29,73 @@
         "text": "Se projektet"
       }
     ],
-    "image": "/data/img/psykiske-lidelser.png"
-  },
-  {
-    "id": "1",
-    "name": "Zilmers",
-    "subtitle": "WEBSITE",
-    "body": "This is a website i created in Wix studio back in 2020",
-    "links": [{ "url": "https://www.zilmers.com/", "text": "Go to website" }],
-    "image": "/data/img/zilmers.png"
+    "image": "/data/img/psykiske-lidelser.png",
+    "additionalImages": [
+      "/data/img/psykiske-lidelser2.png",
+      "/data/img/psykiske-lidelser3.png",
+      "/data/img/psykiske-lidelser4.png",
+      "/data/img/psykiske-lidelser5.png",
+      "/data/img/psykiske-lidelser6.png",
+      "/data/img/psykiske-lidelser7.png"
+
+    ]
   },
   {
     "id": "2",
-    "name": "Northern Decoration",
-    "subtitle": "Website",
-    "body": "I am the co creater of some of the designs for Northern Decoration and have digitalized all of the designs using Adobe Illustrator.",
-    "links": [{ "url": "https://koustrupco.dk/en/northern-decoration-1121/", "text": "Go to website" }],
-    "image": "/data/img/nd.jpg"
+    "name": "Figma prototype - Exam project",
+    "subtitle": "Go to prototype",
+    "body": "",
+    "links": [
+      {
+        "url": "https://www.figma.com/proto/vffPnUYRZOjOx3x3fV2UnO/High-fi-mental-illness?node-id=0-3&p=f&t=EcIjfguEXNV20MFD-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A3",
+        "text": "Go to prototype"
+      }
+    ],
+    "image": "/data/img/figma.png",
+    "additionalImages": []
   },
   {
     "id": "3",
-    "name": "",
-    "subtitle": "",
+    "name": "Zero Buzz Brew",
+    "subtitle": "Go to prototype",
     "body": "",
     "links": [
       {
         "url": "",
-        "text": ""
+        "text": "Go to prototype"
       }
     ],
-    "image": ""
+    "image": "/data/img/zbb1.png",
+    "additionalImages": [
+      "/data/img/zbb2.png",
+      "/data/img/zbb3.png",
+      "/data/img/zbb5.png",
+      "/data/img/zbb6.png",
+      "/data/img/zbb7.png",
+      "/data/img/zbb8.png"
+    ]
   },
-
   {
-    "id": "",
-    "name": "",
-    "subtitle": "",
-    "body": "",
-    "links": [{ "url": "", "text": "" }],
-    "image": ""
+    "id": "4",
+    "name": "Zilmers",
+    "subtitle": "WEBSITE",
+    "body": "This is a website i created in Wix studio back in 2020",
+    "links": [{ "url": "https://www.zilmers.com/", "text": "Go to website" }],
+    "image": "/data/img/zilmers.png",
+    "additionalImages": []
   },
-
   {
     "id": "5",
-    "name": "",
+    "name": "Northern Decoration",
     "subtitle": "Website",
-    "body": "",
-    "links": [{ "url": "", "text": "Go To Website" }],
-    "image": ""
+    "body": "I am the co creater of some of the designs for Northern Decoration and have digitalized all of the designs using Adobe Illustrator.",
+    "links": [
+      {
+        "url": "https://koustrupco.dk/en/northern-decoration-1121/",
+        "text": "Go to website"
+      }
+    ],
+    "image": "/data/img/nd.jpg",
+    "additionalImages": []
   }
 ]

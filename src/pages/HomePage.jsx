@@ -1,7 +1,8 @@
 import Navigation from "../components/Navigation";
 import Projects from "../components/Projects";
-import About from "../components/About";
+import Skills from "../components/Skills";
 import Contact from "../components/Contact";
+import AnimatedWelcome from "../components/AnimatedWelcome";
 
 function Home() {
   return (
@@ -10,12 +11,11 @@ function Home() {
       <section id="home">
         <img src="/data/img/hero.png" alt="" />
         <div className="hero-text">
-          <div className="hero-name">Mie</div>
-          <div className="hero-lastname">Zilmer</div>
+          <AnimatedWelcome />
         </div>
       </section>
+      <Skills />
       <Projects />
-      <About />
       <Contact />
     </div>
   );

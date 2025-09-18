@@ -13,15 +13,31 @@ export default function Projects() {
     getData();
   }, []);
 
+  // Split projects into school and other projects
+  const schoolProjects = projects.slice(0, 4);
+  const otherProjects = projects.slice(4);
+
   return (
     <section id="projects">
-      <div className="headline-container">
-        <h2>Projects</h2>
+
+      {/* School Projects Section */}
+      <div className="project-section">
+        <h3 className="project-section-title">// School projects</h3>
+        <div className="projects-grid">
+          {schoolProjects.map((project) => (
+            <ProjectRow project={project} key={project.id} />
+          ))}
+        </div>
       </div>
-      <div className="projects-grid">
-        {projects.map((project) => (
-          <ProjectRow project={project} key={project.id} />
-        ))}
+
+      {/* Other Projects Section */}
+      <div className="project-section">
+        <h3 className="project-section-title">// Other projects</h3>
+        <div className="projects-grid">
+          {otherProjects.map((project) => (
+            <ProjectRow project={project} key={project.id} />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function ProjectDetailPage() {
   const { id } = useParams();
@@ -25,6 +26,24 @@ export default function ProjectDetailPage() {
 
   const handleGoBack = () => {
     navigate("/");
+    // Use setTimeout to ensure navigation completes before scrolling
+    setTimeout(() => {
+      const savedScrollPosition = sessionStorage.getItem("homeScrollPosition");
+      if (savedScrollPosition) {
+        window.scrollTo({
+          top: parseInt(savedScrollPosition),
+          behavior: "smooth",
+        });
+        // Clean up the stored position
+        sessionStorage.removeItem("homeScrollPosition");
+      } else {
+        // Fallback to scrolling to projects section
+        const projectsSection = document.getElementById("projects");
+        if (projectsSection) {
+          projectsSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, 100);
   };
 
   if (loading) {
@@ -66,6 +85,23 @@ export default function ProjectDetailPage() {
       <div className="project-image-full">
         <img src={project.image} alt={project.name} />
       </div>
+
+      {/* Additional Images Section */}
+      {project.additionalImages && project.additionalImages.length > 0 && (
+        <div className="project-additional-images">
+          {project.additionalImages.map((imageUrl, index) => (
+            <div key={index} className="additional-image">
+              <img
+                src={imageUrl}
+                alt={`${project.name} - Image ${index + 1}`}
+              />
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 }

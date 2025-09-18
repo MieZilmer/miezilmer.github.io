@@ -4,6 +4,8 @@ export default function ProjectRow({ project }) {
   const navigate = useNavigate();
 
   const handleProjectClick = () => {
+    // Store current scroll position before navigating
+    sessionStorage.setItem("homeScrollPosition", window.scrollY.toString());
     navigate(`/project/${project.id}`);
   };
 
@@ -18,8 +20,6 @@ export default function ProjectRow({ project }) {
       </figure>
       <article>
         <h3>{project.name}</h3>
-        <h4>{project.subtitle}</h4>
-        <p>{project.body}</p>
       </article>
     </section>
   );
