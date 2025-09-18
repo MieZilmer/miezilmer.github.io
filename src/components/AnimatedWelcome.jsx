@@ -77,39 +77,44 @@ export default function AnimatedWelcome() {
   ]);
 
   return (
-    <div className="animated-welcome">
-      <div className="welcome-text">
-        <div className="welcome-line-1">
-          {displayText1}
-          {currentLine === 1 && !isComplete && (
-            <span className="cursor">|</span>
-          )}
-        </div>
-        <div className="welcome-line-2 name-line">
-          {displayText2}
-          {currentLine === 2 && !isComplete && (
-            <span className="cursor">|</span>
-          )}
-        </div>
-        <div className="welcome-line-3 name-line">
-          {displayText3}
-          {currentLine === 3 && !isComplete && (
-            <span className="cursor">|</span>
-          )}
-        </div>
-        <div className="welcome-line-4">
-          {displayText4}
-          {currentLine === 4 && !isComplete && (
-            <span className="cursor">|</span>
-          )}
-        </div>
-        <div className="welcome-line-5 name-line">
-          {displayText5}
-          {currentLine === 5 && !isComplete && (
-            <span className="cursor">|</span>
-          )}
+    <section id="home">
+      <img src="/data/img/hero.png" alt="" />
+      <div className="hero-text">
+        <div className="animated-welcome">
+          <div className="welcome-text">
+            <div className="welcome-line-1">
+              {displayText1}
+              {currentLine === 1 && !isComplete && (
+                <span className="cursor">|</span>
+              )}
+            </div>
+            <div className="welcome-line-2 name-line">
+              {displayText2}
+              {currentLine === 2 && !isComplete && (
+                <span className="cursor">|</span>
+              )}
+            </div>
+            <div className="welcome-line-3 name-line">
+              {displayText3}
+              {currentLine === 3 && !isComplete && (
+                <span className="cursor">|</span>
+              )}
+            </div>
+            <div className="welcome-line-4">
+              {displayText4}
+              {currentLine === 4 && !isComplete && (
+                <span className="cursor">|</span>
+              )}
+            </div>
+            <div className="welcome-line-5 name-line">
+              {displayText5}
+              {currentLine === 5 && !isComplete && (
+                <span className="cursor">|</span>
+              )}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

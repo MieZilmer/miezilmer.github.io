@@ -2,7 +2,7 @@ function Contact() {
   return (
     <footer id="contact">
       <div className="footer-content">
-        <h3 className="footer-title">Stay in touch:</h3>
+        <h3 className="footer-title">Get in touch:</h3>
         <div className="social-links">
           <a
             href="https://www.facebook.com/mie.zilmer"
@@ -15,7 +15,7 @@ function Contact() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/mie-zilmer-76a005142/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"

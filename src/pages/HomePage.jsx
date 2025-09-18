@@ -8,12 +8,7 @@ function Home() {
   return (
     <div>
       <Navigation />
-      <section id="home">
-        <img src="/data/img/hero.png" alt="" />
-        <div className="hero-text">
-          <AnimatedWelcome />
-        </div>
-      </section>
+      <AnimatedWelcome />
       <Skills />
       <Projects />
       <Contact />

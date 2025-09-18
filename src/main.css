@@ -30,6 +30,28 @@ body {
   font-size: 1.5rem;
 }
 
+/* Navigation responsive styles */
+@media (max-width: 1024px) {
+  #navigation a {
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #navigation a {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #navigation a {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+}
+
 /* ================================
    HERO SECTION COMPONENT
    ================================ */
@@ -72,14 +94,14 @@ body {
    ANIMATED WELCOME COMPONENT
    ================================ */
 .animated-welcome {
-  margin-top: 8rem;
-  height: 26rem;
+  margin-top: clamp(4rem, 8vw, 8rem); /* Scales proportionally from 3022px baseline */
+  height: clamp(13rem, 26vw, 26rem); /* Scales proportionally */
   display: flex;
   align-items: center;
 }
 
 .welcome-text {
-  font-size: 5rem;
+  font-size: clamp(2rem, 4vw, 4rem); /* Scales from 3022px baseline */
   font-weight: 500;
   color: white;
   letter-spacing: 0.5px;
@@ -89,39 +111,39 @@ body {
 .welcome-line-1,
 .welcome-line-4 {
   display: block;
-  height: 5.5rem;
-  min-height: 5.5rem;
-  font-size: 5rem;
+  height: clamp(2.2rem, 4.4vw, 4.4rem); /* Scales proportionally */
+  min-height: clamp(2.2rem, 4.4vw, 4.4rem);
+  font-size: clamp(2rem, 4vw, 4rem); /* Scales from baseline */
 }
 
 .welcome-line-1 {
-  margin-bottom: 3rem;
+  margin-bottom: clamp(1.2rem, 2.4vw, 2.4rem); /* Proportional margins */
 }
 
 .welcome-line-2,
 .welcome-line-3 {
   display: block;
-  height: 10rem;
-  min-height: 10rem;
-  font-size: 10rem;
+  height: clamp(4rem, 8vw, 8rem); /* Scales proportionally */
+  min-height: clamp(4rem, 8vw, 8rem);
+  font-size: clamp(4rem, 8vw, 8rem); /* Scales from baseline */
   font-weight: 700;
 }
 
 .welcome-line-3 {
-  margin-left: 3rem;
+  margin-left: clamp(1.2rem, 2.4vw, 2.4rem); /* Proportional spacing */
 }
 
 .welcome-line-4 {
-  margin-top: 3rem;
+  margin-top: clamp(1.2rem, 2.4vw, 2.4rem); /* Proportional spacing */
 }
 
 .welcome-line-5 {
   display: block;
-  height: 14rem;
-  min-height: 14rem;
-  font-size: 10rem;
+  height: clamp(5.6rem, 11.2vw, 11.2rem); /* Scales proportionally */
+  min-height: clamp(5.6rem, 11.2vw, 11.2rem);
+  font-size: clamp(4rem, 8vw, 8rem); /* Scales from baseline */
   font-weight: 700;
-  margin-top: 5rem;
+  margin-top: clamp(2rem, 4vw, 4rem); /* Proportional spacing */
   margin-left: 0;
 }
 
@@ -162,98 +184,11 @@ body {
     left: 3%;
     max-width: 45%;
   }
-
-  .welcome-text {
-    font-size: 3rem;
-  }
-
-  .welcome-line-1,
-  .welcome-line-4 {
-    height: 3.5rem;
-    min-height: 3.5rem;
-    font-size: 3rem;
-  }
-
-  .welcome-line-1 {
-    margin-bottom: 2rem;
-  }
-
-  .welcome-line-2,
-  .welcome-line-3 {
-    height: 6rem;
-    min-height: 6rem;
-    font-size: 6rem;
-  }
-
-  .welcome-line-3 {
-    margin-left: 2rem;
-  }
-
-  .welcome-line-4 {
-    margin-top: 2rem;
-  }
-
-  .welcome-line-5 {
-    height: 5rem;
-    min-height: 5rem;
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin-top: 3rem;
-    margin-left: 0;
-    max-width: 100%;
-    overflow: hidden;
-  }
-
-  .animated-welcome {
-    height: 18rem;
-    margin-top: 4rem;
-  }
 }
 
 @media (max-width: 768px) {
-  .welcome-text {
-    font-size: 4rem;
-  }
-
-  .welcome-line-1,
-  .welcome-line-4 {
-    height: 4.4rem;
-    min-height: 4.4rem;
-    font-size: 4rem;
-  }
-
-  .welcome-line-1 {
-    margin-bottom: 2rem;
-  }
-
-  .welcome-line-2,
-  .welcome-line-3 {
-    height: 8rem;
-    min-height: 8rem;
-    font-size: 8rem;
-  }
-
-  .welcome-line-3 {
-    margin-left: 2rem;
-  }
-
-  .welcome-line-4 {
-    margin-top: 2rem;
-  }
-
-  .welcome-line-5 {
-    height: 10rem;
-    min-height: 10rem;
-    font-size: 10rem;
-    font-weight: 700;
-    margin-top: 3rem;
-    margin-left: 0;
-  }
-
-  .animated-welcome {
-    height: 20rem;
-    margin-top: 6rem;
-  }
+  /* Mobile-specific styles can be added here if needed */
+  /* Animated welcome text now scales automatically with viewport */
 }
 
 /* ================================
