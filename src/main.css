@@ -94,7 +94,11 @@ body {
    ANIMATED WELCOME COMPONENT
    ================================ */
 .animated-welcome {
-  margin-top: clamp(4rem, 8vw, 8rem); /* Scales proportionally from 3022px baseline */
+  margin-top: clamp(
+    4rem,
+    8vw,
+    8rem
+  ); /* Scales proportionally from 3022px baseline */
   height: clamp(13rem, 26vw, 26rem); /* Scales proportionally */
   display: flex;
   align-items: center;
@@ -191,6 +195,71 @@ body {
   /* Animated welcome text now scales automatically with viewport */
 }
 
+/* Tablet and smaller screens - 12.9 inch and below */
+@media (max-width: 1024px) {
+  #home {
+    background-color: rgb(28, 126, 127); /* Signature teal background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 4rem; /* Account for navbar */
+  }
+
+  #home img {
+    display: none; /* Hide the hero image */
+  }
+
+  .hero-text {
+    position: static; /* Remove absolute positioning */
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .animated-welcome {
+    margin-top: 0;
+    height: auto;
+    text-align: center;
+  }
+
+  .welcome-text {
+    color: white; /* Ensure text is white on teal background */
+  }
+
+  /* Add profile image below the animated text */
+  .hero-text::after {
+    content: "";
+    background-image: url("/data/img/Profilbillede.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    margin-top: 3rem;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Small mobile screens - even more compact */
+@media (max-width: 480px) {
+  .hero-text {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .hero-text::after {
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+  }
+}
+
 /* ================================
    TYPOGRAPHY & GENERAL LAYOUT
    ================================ */
@@ -246,7 +315,7 @@ h2 {
 
 .project-section-title {
   color: rgb(28, 126, 127);
-  font-size: 7rem;
+  font-size: clamp(3rem, 7vw, 7rem); /* Responsive scaling from 3rem to 7rem */
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -601,7 +670,7 @@ h2 {
 
 .skills-title {
   color: rgb(28, 126, 127);
-  font-size: 7rem;
+  font-size: clamp(3rem, 7vw, 7rem); /* Responsive scaling from 3rem to 7rem */
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -615,7 +684,7 @@ h2 {
   margin-top: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
@@ -702,10 +771,6 @@ h2 {
 }
 
 @media (max-width: 767px) {
-  .skills-title {
-    font-size: 4rem;
-  }
-
   .skills-card {
     padding: 3rem;
   }
