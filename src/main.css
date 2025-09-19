@@ -6,6 +6,30 @@ body {
   margin: 0;
 }
 
+/* Headlines font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero-name,
+.hero-lastname,
+.project-section-title,
+.skills-title,
+.footer-title,
+.project-title,
+.skills-card-title {
+  font-family: "Neuton", serif;
+}
+
+/* Body text font for skill boxes and detail pages */
+.skills-card-description,
+.project-description,
+.project-description p {
+  font-family: "Roboto", sans-serif;
+}
+
 /* ================================
    NAVIGATION COMPONENT
    ================================ */
