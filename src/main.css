@@ -30,7 +30,6 @@ body {
   font-size: 1.5rem;
 }
 
-/* Navigation responsive styles */
 @media (max-width: 1024px) {
   #navigation a {
     padding: 1rem 3rem;
@@ -38,16 +37,9 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  #navigation a {
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
-  }
-}
-
 @media (max-width: 480px) {
   #navigation {
-    display: none; /* Hide navbar on phone screens */
+    display: none;
   }
 
   #navigation a {
@@ -60,7 +52,7 @@ body {
    HERO SECTION COMPONENT
    ================================ */
 #home {
-  padding-top: 0; /* Remove padding to align with navbar */
+  padding-top: 0;
   position: relative;
 }
 
@@ -98,18 +90,14 @@ body {
    ANIMATED WELCOME COMPONENT
    ================================ */
 .animated-welcome {
-  margin-top: clamp(
-    4rem,
-    8vw,
-    8rem
-  ); /* Scales proportionally from 3022px baseline */
-  height: clamp(13rem, 26vw, 26rem); /* Scales proportionally */
+  margin-top: clamp(4rem, 8vw, 8rem);
+  height: clamp(13rem, 26vw, 26rem);
   display: flex;
   align-items: center;
 }
 
 .welcome-text {
-  font-size: clamp(2rem, 4vw, 4rem); /* Scales from 3022px baseline */
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 500;
   color: white;
   letter-spacing: 0.5px;
@@ -119,39 +107,39 @@ body {
 .welcome-line-1,
 .welcome-line-4 {
   display: block;
-  height: clamp(2.2rem, 4.4vw, 4.4rem); /* Scales proportionally */
+  height: clamp(2.2rem, 4.4vw, 4.4rem);
   min-height: clamp(2.2rem, 4.4vw, 4.4rem);
-  font-size: clamp(2rem, 4vw, 4rem); /* Scales from baseline */
+  font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .welcome-line-1 {
-  margin-bottom: clamp(1.2rem, 2.4vw, 2.4rem); /* Proportional margins */
+  margin-bottom: clamp(1.2rem, 2.4vw, 2.4rem);
 }
 
 .welcome-line-2,
 .welcome-line-3 {
   display: block;
-  height: clamp(4rem, 8vw, 8rem); /* Scales proportionally */
+  height: clamp(4rem, 8vw, 8rem);
   min-height: clamp(4rem, 8vw, 8rem);
-  font-size: clamp(4rem, 8vw, 8rem); /* Scales from baseline */
+  font-size: clamp(4rem, 8vw, 8rem);
   font-weight: 700;
 }
 
 .welcome-line-3 {
-  margin-left: clamp(1.2rem, 2.4vw, 2.4rem); /* Proportional spacing */
+  margin-left: clamp(1.2rem, 2.4vw, 2.4rem);
 }
 
 .welcome-line-4 {
-  margin-top: clamp(1.2rem, 2.4vw, 2.4rem); /* Proportional spacing */
+  margin-top: clamp(1.2rem, 2.4vw, 2.4rem);
 }
 
 .welcome-line-5 {
   display: block;
-  height: clamp(5.6rem, 11.2vw, 11.2rem); /* Scales proportionally */
+  height: clamp(5.6rem, 11.2vw, 11.2rem);
   min-height: clamp(5.6rem, 11.2vw, 11.2rem);
-  font-size: clamp(4rem, 8vw, 8rem); /* Scales from baseline */
+  font-size: clamp(4rem, 8vw, 8rem);
   font-weight: 700;
-  margin-top: clamp(2rem, 4vw, 4rem); /* Proportional spacing */
+  margin-top: clamp(2rem, 4vw, 4rem);
   margin-left: 0;
 }
 
@@ -159,29 +147,6 @@ body {
   display: block;
 }
 
-.cursor {
-  animation: blink 1s infinite;
-  font-weight: normal;
-  color: rgb(28, 126, 127);
-  text-shadow: 0 0 10px rgba(28, 126, 127, 0.8);
-}
-
-@keyframes blink {
-  0%,
-  50% {
-    opacity: 1;
-  }
-  51%,
-  100% {
-    opacity: 0;
-  }
-}
-
-/* ================================
-   RESPONSIVE MEDIA QUERIES
-   ================================ */
-
-/* iPad 13 inch media query */
 @media (max-width: 1366px) and (min-width: 1025px) {
   #home img {
     height: 90vh;
@@ -194,27 +159,21 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  /* Mobile-specific styles can be added here if needed */
-  /* Animated welcome text now scales automatically with viewport */
-}
-
-/* Tablet and smaller screens - 12.9 inch and below */
 @media (max-width: 1024px) {
   #home {
-    background-color: rgb(28, 126, 127); /* Signature teal background */
+    background-color: rgb(28, 126, 127);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 4rem; /* Account for navbar */
+    padding-top: 4rem;
   }
 
   #home img {
-    display: none; /* Hide the hero image */
+    display: none;
   }
 
   .hero-text {
-    position: static; /* Remove absolute positioning */
+    position: static;
     transform: none;
     display: flex;
     flex-direction: column;
@@ -231,10 +190,9 @@ body {
   }
 
   .welcome-text {
-    color: white; /* Ensure text is white on teal background */
+    color: white;
   }
 
-  /* Add profile image below the animated text */
   .hero-text::after {
     content: "";
     background-image: url("/data/img/Profilbillede.png");
@@ -251,10 +209,9 @@ body {
   }
 }
 
-/* Small mobile screens - even more compact */
 @media (max-width: 480px) {
   #home {
-    padding-top: 0; /* Remove navbar padding since navbar is hidden */
+    padding-top: 0;
   }
 
   .hero-text {
@@ -267,21 +224,20 @@ body {
     margin-top: 2rem;
   }
 
-  /* Make section titles much smaller to fit on one line */
   .skills-title {
-    font-size: 1.5rem !important; /* Override clamp for phone screens */
+    font-size: 1.5rem !important;
     margin-bottom: 2rem;
   }
 
   .project-section-title {
-    font-size: 1.5rem !important; /* Much smaller for phone screens */
+    font-size: 1.5rem !important;
     text-align: center;
     margin: 2rem auto;
   }
 }
 
 /* ================================
-   TYPOGRAPHY & GENERAL LAYOUT
+   GENERAL LAYOUT
    ================================ */
 h1 {
   margin-left: 2em;
@@ -296,7 +252,6 @@ h2 {
   font-size: 2.55rem;
 }
 
-/* Section content alignment */
 #home p,
 #contact p {
   margin-left: 2em;
@@ -318,7 +273,7 @@ h2 {
 }
 
 #projects {
-  padding-top: 1rem; /* Add 1rem of space above School projects headline */
+  padding-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -328,14 +283,13 @@ h2 {
   }
 }
 
-/* Project sections */
 .project-section {
   margin-bottom: 3rem;
 }
 
 .project-section-title {
   color: rgb(28, 126, 127);
-  font-size: clamp(3rem, 7vw, 7rem); /* Responsive scaling from 3rem to 7rem */
+  font-size: clamp(3rem, 7vw, 7rem);
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -488,19 +442,25 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  min-width: 150px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .project-link-button {
   display: inline-block;
-  padding: 16px 28px;
+  padding: 18px 32px;
   background-color: rgb(28, 126, 127);
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 8px;
   text-align: center;
   transition: background-color 0.3s ease;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  min-width: 200px;
 }
 
 .project-link-button:hover {
@@ -521,7 +481,6 @@ h2 {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Additional Images Section */
 .project-additional-images {
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -538,13 +497,6 @@ h2 {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  .project-additional-images {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
 }
 
 /* ================================
@@ -575,8 +527,12 @@ h2 {
   opacity: 0.7;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
+  #navigation a {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+  }
+
   .project-header {
     margin-top: 15vh;
   }
@@ -599,6 +555,11 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 1rem;
+  }
+
+  .project-additional-images {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 
@@ -684,13 +645,13 @@ h2 {
 }
 
 #skills {
-  padding-top: 4rem; /* Account for fixed navbar height */
-  margin-top: -4rem; /* Offset the padding to maintain layout */
+  padding-top: 4rem;
+  margin-top: -4rem;
 }
 
 .skills-title {
   color: rgb(28, 126, 127);
-  font-size: clamp(3rem, 7vw, 7rem); /* Responsive scaling from 3rem to 7rem */
+  font-size: clamp(3rem, 7vw, 7rem);
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -716,13 +677,7 @@ h2 {
   padding: 3.5rem;
   border-radius: 8px;
   border: 3px solid rgb(28, 126, 127);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-}
-
-.skills-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(28, 126, 127, 0.1);
 }
 
 .skills-card-title {

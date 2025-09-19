@@ -66,19 +66,21 @@ export default function ProjectDetailPage() {
           <div className="project-description">
             <p>{project.body}</p>
           </div>
-          <div className="project-links-right">
-            {project.links.map((link, index) => (
-              <a
-                key={`${project.id}-${index}`}
-                href={link.url}
-                rel="noreferrer"
-                target="_blank"
-                className="project-link-button"
-              >
-                {link.text}
-              </a>
-            ))}
-          </div>
+        </div>
+
+        {/* Project links positioned under text and above image */}
+        <div className="project-links-right">
+          {project.links.map((link, index) => (
+            <a
+              key={`${project.id}-${index}`}
+              href={link.url}
+              rel="noreferrer"
+              target="_blank"
+              className="project-link-button"
+            >
+              {link.text}
+            </a>
+          ))}
         </div>
       </div>
 

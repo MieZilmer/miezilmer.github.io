@@ -1,5 +1,41 @@
 [
   {
+    "id": "1",
+    "name": "Exam project",
+    "subtitle": "2 semester",
+    "body": "This was our second-semester exam project, created for the Steno Museum’s upcoming exhibition “The Overlooked Body.” We were given the choice of nine different themes, and my group and I chose to focus on mental illness, specifically anxiety. Our intention was to convey what it can feel like to experience anxiety; however, since it is often a deeply personal and individual experience, we decided to place greater emphasis on highlighting that, as a relative or companion, the most important thing you can do when someone is having a panic attack is to listen to their needs.",
+    "links": [
+      {
+        "url": "https://steno.makiro.dk/index.html",
+        "text": "See project"
+      }
+    ],
+    "image": "/data/img/psykiske-lidelser.png",
+    "additionalImages": [
+      "/data/img/psykiske-lidelser2.png",
+      "/data/img/psykiske-lidelser3.png",
+      "/data/img/psykiske-lidelser4.png",
+      "/data/img/psykiske-lidelser5.png",
+      "/data/img/psykiske-lidelser6.png",
+      "/data/img/psykiske-lidelser7.png"
+      
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Exam project - Figma prototype",
+    "subtitle": "Go to prototype",
+    "body": "We prototyped everything for the exam project in Figma. I created the whole prototype, so we could test the user flow and interactions.",
+    "links": [
+      {
+        "url": "https://www.figma.com/proto/vffPnUYRZOjOx3x3fV2UnO/High-fi-mental-illness?node-id=0-3&p=f&t=EcIjfguEXNV20MFD-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A3",
+        "text": "Go to prototype"
+      }
+    ],
+    "image": "/data/img/figma.png",
+    "additionalImages": []
+  },
+  {
     "id": "0",
     "name": "Interactive storytelling",
     "subtitle": "A project i had in the 2 semester",
@@ -7,7 +43,7 @@
     "links": [
       {
         "url": "https://storytelling.mdamsgaard.dk",
-        "text": "Se projektet"
+        "text": "See project"
       }
     ],
     "image": "/data/img/storytelling1.png",
@@ -19,42 +55,6 @@
     ]
   },
   {
-    "id": "1",
-    "name": "Exam project",
-    "subtitle": "2 semester",
-    "body": "This was the 2nd semesters exam project on the multimedia education.",
-    "links": [
-      {
-        "url": "https://steno.makiro.dk/index.html",
-        "text": "Se projektet"
-      }
-    ],
-    "image": "/data/img/psykiske-lidelser.png",
-    "additionalImages": [
-      "/data/img/psykiske-lidelser2.png",
-      "/data/img/psykiske-lidelser3.png",
-      "/data/img/psykiske-lidelser4.png",
-      "/data/img/psykiske-lidelser5.png",
-      "/data/img/psykiske-lidelser6.png",
-      "/data/img/psykiske-lidelser7.png"
-
-    ]
-  },
-  {
-    "id": "2",
-    "name": "Figma prototype - Exam project",
-    "subtitle": "Go to prototype",
-    "body": "",
-    "links": [
-      {
-        "url": "https://www.figma.com/proto/vffPnUYRZOjOx3x3fV2UnO/High-fi-mental-illness?node-id=0-3&p=f&t=EcIjfguEXNV20MFD-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A3",
-        "text": "Go to prototype"
-      }
-    ],
-    "image": "/data/img/figma.png",
-    "additionalImages": []
-  },
-  {
     "id": "3",
     "name": "Zero Buzz Brew",
     "subtitle": "Go to prototype",
@@ -62,7 +62,7 @@
     "links": [
       {
         "url": "http://zerobuzzbrew.makiro.dk/",
-        "text": "Go to prototype"
+        "text": "See project"
       }
     ],
     "image": "/data/img/forside-ol.avif",
@@ -82,7 +82,14 @@
     "body": "This is a website i created in Wix studio back in 2020",
     "links": [{ "url": "https://www.zilmers.com/", "text": "Go to website" }],
     "image": "/data/img/zilmers.png",
-    "additionalImages": []
+    "additionalImages": [
+      "/data/img/Zilmers1.png",
+      "/data/img/Zilmers2.png",
+      "/data/img/Zilmers3.png",
+      "/data/img/Zilmers4.png",
+      "/data/img/Zilmers5.png",
+      "/data/img/Zilmers6.png"
+    ]
   },
   {
     "id": "5",
@@ -96,6 +103,17 @@
       }
     ],
     "image": "/data/img/nd.jpg",
-    "additionalImages": []
+    "additionalImages": [
+    "/data/img/nd1.jpg", 
+    "/data/img/nd2.jpg", 
+    "/data/img/nd3.jpg",
+    "/data/img/nd4.jpg",
+    "/data/img/nd5.jpg",
+    "/data/img/nd6.jpg",
+    "/data/img/nd7.jpg",
+    "/data/img/nd8.jpg",
+    "/data/img/nd9.jpg",
+    "/data/img/nd10.jpg"
+    ]
   }
 ]
